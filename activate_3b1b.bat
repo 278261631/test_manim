@@ -2,7 +2,12 @@ cd /d E:/3b1b
 rem C:/Python/Python310/python.exe -m venv 3b1b_env
 3b1b_env\Scripts\activate
 
-cd /d E:/3b1b/manim-master
+cd /d E:/3b1b/test_manim
+
+manimgl test_pole.py magnet
+
+
+
 
 manimgl example_scenes.py OpeningManimExample
 manimgl example_scenes.py AnimatingMethods
