@@ -6,14 +6,15 @@ import numpy as np
 class magnet(Scene):
     def construct(self):
         circle = Circle()
-        circle.set_fill(BLUE, opacity=0.5)
-        circle.set_stroke(BLUE_E, width=4)
+        circle.set_fill(BLUE, opacity=1)
+        circle.set_stroke(WHITE, width=4)
         square = Square()
 
         self.play(ShowCreation(square))
-        self.wait()
-
-        self.embed()
+        # self.play(ShowCreation(circle))
+        # self.wait(5)
+        #
+        # self.embed()
 
 
         self.play(ReplacementTransform(square, circle))
